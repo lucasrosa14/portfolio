@@ -25,7 +25,7 @@ const translations = {
     projeto4_stack: "🔧 Stack: Selenium + Python + Behave + Pytest",
     projeto4_desc: "📌 Automação de testes na aplicação TodoMvc com Python.",
     projeto_repositorio: "🔗 Repositório",
-    projeto_report_desc: "📊 Relatório de execução de testes com Allure.",
+    projeto_report_desc: "📊 Relatório com Allure.",
     // RESUMO
     resumo_titulo: "Resumo Profissional e Acadêmico",
     resumo_educacao_titulo: "📚 Educação",
