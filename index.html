@@ -7,30 +7,40 @@
   <title>Lucas Souza da Rosa | QA Engineer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="i18n.js"></script>
+  <style>
+  html {
+    scroll-padding-top: 140px; /* mesmo valor da altura do header */
+  }
+</style>
 </head>
 
 <body class="bg-gray-50 text-gray-800 font-sans">
 
   <!-- Header -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md p-6 flex justify-between items-center">
-    <h1 class="text-2xl font-bold">Lucas Souza da Rosa - QA Engineer</h1>
-    <nav class="space-x-4">
-      <a href="#sobre" class="hover:text-blue-600" data-translate="nav_sobre"></a>
-      <a href="#resumo" class="hover:text-blue-600" data-translate="nav_resumo"></a>
-      <a href="#ferramentas" class="hover:text-blue-600" data-translate="nav_tecnologias"></a>
-      <a href="#projetos" class="hover:text-blue-600" data-translate="nav_projetos"></a>
-      <a href="#contato" class="hover:text-blue-600" data-translate="nav_contato"></a>
+  <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md p-6 flex flex-col items-center text-center">
+    <h1 class="text-2xl font-bold mb-4">Lucas Souza da Rosa - QA Engineer</h1>
+
+    <nav class="flex flex-wrap justify-center items-center gap-4 text-sm">
+      <a href="#sobre" class="hover:text-blue-600" data-translate="nav_sobre">Sobre</a>
+      <a href="#resumo" class="hover:text-blue-600" data-translate="nav_resumo">Resumo</a>
+      <a href="#ferramentas" class="hover:text-blue-600" data-translate="nav_tecnologias">Tecnologias</a>
+      <a href="#projetos" class="hover:text-blue-600" data-translate="nav_projetos">Projetos</a>
+      <a href="#contato" class="hover:text-blue-600" data-translate="nav_contato">Contato</a>
+
       <!-- Idioma -->
-        <label for="languageSelector" class="mr-2 font-medium">   🌐 Idioma:</label>
+      <div class="flex items-center space-x-2">
+        <label for="languageSelector" class="font-medium">🌐 Idioma:</label>
         <select id="languageSelector" class="border border-gray-300 rounded px-2 py-1 text-sm">
           <option value="pt">Português</option>
           <option value="en">English</option>
         </select>
+      </div>
     </nav>
   </header>
 
+  <div class="h-[140px]"></div>
   <!-- Sobre mim -->
-  <section id="sobre" class="max-w-4xl mx-auto p-8 pt-36">
+  <section id="sobre" class="scroll-mt-42 max-w-4xl mx-auto p-8">
     <h2 class="text-xl font-semibold mb-4" data-translate="sobre_titulo">Sobre Mim</h2>
     <p class="mb-4" data-translate="sobre_paragrafo_1">
       Sou QA Engineer com foco em automação de testes. Tenho experiência com Playwright, Selenium, Cucumber,
@@ -48,7 +58,7 @@
   </section>
 
   <!-- Resumo Profissional e Acadêmico -->
-  <section id="resumo" class="py-10 pt-32">
+  <section id="resumo" class="py-10">
     <div class="max-w-4xl mx-auto px-8">
       <h2 class="text-xl font-semibold mb-6" data-translate="resumo_titulo">Resumo Profissional e Acadêmico</h2>
 
@@ -120,7 +130,7 @@
   </section>
 
   <!-- Ferramentas e Tecnologias -->
-  <section id="ferramentas" class="py-10 pt-32">
+  <section id="ferramentas" class="py-10">
     <div class="max-w-4xl mx-auto px-8">
       <h2 class="text-xl font-semibold mb-6" data-translate="ferramentas_titulo">Ferramentas e Tecnologias</h2>
       <ul class="grid grid-cols-2 sm:grid-cols-3 gap-4 list-disc list-inside text-gray-700">
@@ -139,7 +149,7 @@
   </section>
 
   <!-- Projetos em Destaque -->
-  <section id="projetos" class="bg-white py-10 pt-32">
+  <section id="projetos" class="bg-white py-10">
     <div class="max-w-4xl mx-auto px-8">
       <h2 class="text-xl font-semibold mb-6" data-translate="titulo_projetos"></h2>
 
@@ -194,7 +204,7 @@
   </section>
 
   <!-- Contato -->
-  <section id="contato" class="max-w-4xl mx-auto p-8 pt-32">
+  <section id="contato" class="max-w-4xl mx-auto p-8">
     <h2 class="text-xl font-semibold mb-4" data-translate="titulo_contato"></h2>
     <p>Email: <a href="mailto:contact.lucassr@gmail.com"
         class="text-blue-600 hover:underline">contact.lucassr@gmail.com</a></p>
