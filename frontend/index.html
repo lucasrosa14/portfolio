@@ -6,19 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucas Souza da Rosa | QA Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="i18n.js"></script>
 </head>
 
 <body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Idioma -->
+    <div class="bg-gray-100 p-4 flex justify-end">
+        <label for="languageSelector" class="mr-2 font-medium">🌐 Idioma:</label>
+        <select id="languageSelector" class="border border-gray-300 rounded px-2 py-1 text-sm">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+        </select>
+    </div>
 
     <!-- Header -->
     <header class="bg-white shadow p-6 flex justify-between items-center">
         <h1 class="text-2xl font-bold">Lucas Souza da Rosa - QA Engineer</h1>
         <nav class="space-x-4">
-            <a href="#sobre" class="hover:text-blue-600">Sobre</a>
-            <a href="#resumo" class="hover:text-blue-600">Resumo Profissional</a>
-            <a href="#ferramentas" class="hover:text-blue-600">Tecnologias</a>
-            <a href="#projetos" class="hover:text-blue-600">Projetos</a>         
-            <a href="#contato" class="hover:text-blue-600">Contato</a>
+            <a href="#sobre" class="hover:text-blue-600" data-translate="nav_sobre"></a>
+            <a href="#resumo" class="hover:text-blue-600" data-translate="nav_resumo"></a>
+            <a href="#ferramentas" class="hover:text-blue-600" data-translate="nav_tecnologias"></a>
+            <a href="#projetos" class="hover:text-blue-600" data-translate="nav_projetos"></a>
+            <a href="#contato" class="hover:text-blue-600" data-translate="nav_contato"></a>
+
         </nav>
     </header>
 
@@ -118,18 +129,18 @@
                 <li>Allure</li>
             </ul>
         </div>
-    </section>    
+    </section>
 
     <!-- Projetos em Destaque -->
     <section id="projetos" class="bg-white py-10">
         <div class="max-w-4xl mx-auto px-8">
-            <h2 class="text-xl font-semibold mb-6">Projetos em Destaque</h2>
+            <h2 class="text-xl font-semibold mb-6" data-translate="titulo_projetos"></h2>
 
             <!-- Projeto 1 -->
             <div class="bg-white shadow-md rounded-2xl p-6 mb-6">
-                <h3 class="text-xl font-semibold mb-2">orangehrm-playwright</h3>
-                <p class="mb-2 text-sm text-gray-600">🔧 <strong>Stack:</strong> Playwright + TypeScript + Allure</p>
-                <p class="mb-4">🧪 Automatização E2E do OrangeHRM (login, cadastro, busca).</p>
+                <h3 class="text-lg font-semibold" data-translate="projeto1_titulo"></h3>
+                <p class="text-sm text-gray-600 mb-1" data-translate="projeto1_stack"></p>
+                <p class="text-sm" data-translate="projeto1_desc"></p>
                 <div class="mb-4">
                     <a href="https://github.com/lucasrosa14/orangeHRM-test/actions/workflows/playwright.yml"
                         target="_blank">
@@ -139,40 +150,38 @@
                 </div>
                 <div class="flex gap-4">
                     <a href="https://github.com/lucasrosa14/orangehrm-playwright" target="_blank"
-                        class="text-blue-600 font-medium hover:underline">🔗 Ver repositório</a>
+                        class="text-blue-600 font-medium hover:underline" data-translate="projeto_repositorio"></a>
                     <a href="https://lucasrosa14.github.io/orangeHRM-test/" target="_blank"
-                        class="text-purple-600 font-medium hover:underline">📊 Ver relatório Allure</a>
+                        class="text-purple-600 font-medium hover:underline" data-translate="projeto_report_desc"></a>
                 </div>
             </div>
 
             <!-- Projeto 2 -->
             <div class="bg-white shadow-md rounded-2xl p-6 mb-6">
-                <h3 class="text-xl font-semibold mb-2">playwrightFastTrack</h3>
-                <p class="mb-2 text-sm text-gray-600">🔧 <strong>Stack:</strong> Playwright + TypeScript + NodeJs +
-                    Allure</p>
-                <p class="mb-4">📚 Projeto de automação de testes com Playwright, voltado para aprendizado rápido e boas
-                    práticas em testes end-to-end.</p>
+                <h3 class="text-lg font-semibold" data-translate="projeto2_titulo">
+                </h3>
+                <p class="text-sm text-gray-600 mb-1" data-translate="projeto2_stack"></p>
+                <p class="text-sm" data-translate="projeto2_desc"></p>
                 <a href="https://github.com/lucasrosa14/playwrightFastTrack" target="_blank"
-                    class="text-blue-600 font-medium hover:underline">🔗 Ver repositório</a>
+                    class="text-blue-600 font-medium hover:underline" data-translate="projeto_repositorio"></a>
             </div>
 
             <!-- Projeto 3 -->
             <div class="bg-white shadow-md rounded-2xl p-6 mb-6">
-                <h3 class="text-xl font-semibold mb-2">FunctionalAssessment</h3>
-                <p class="mb-2 text-sm text-gray-600">🔧 <strong>Stack:</strong> Selenium + Cucumber + Java</p>
-                <p class="mb-4">🧪 Testes de login, ações com produtos e checkout na plataforma SauceDemo para aplicação
-                    de conhecimento adquirido.</p>
+                <h3 class="text-lg font-semibold" data-translate="projeto3_titulo"></h3>
+                <p class="text-sm text-gray-600 mb-1" data-translate="projeto3_stack"></p>
+                <p class="text-sm" data-translate="projeto3_desc"></p>
                 <a href="https://github.com/lucasrosa14/FunctionalAssessment" target="_blank"
-                    class="text-blue-600 font-medium hover:underline">🔗 Ver repositório</a>
+                    class="text-blue-600 font-medium hover:underline" data-translate="projeto_repositorio"></a>
             </div>
 
             <!-- Projeto 4 -->
             <div class="bg-white shadow-md rounded-2xl p-6 mb-6">
-                <h3 class="text-xl font-semibold mb-2">TodoMvc</h3>
-                <p class="mb-2 text-sm text-gray-600">🔧 <strong>Stack:</strong> Selenium + Python + Behave + Pytest</p>
-                <p class="mb-4">📌 Projeto de estudo de automação de testes usando Python na plataforma TodoMvc.</p>
+                <h3 class="text-lg font-semibold" data-translate="projeto4_titulo"></h3>
+                <p class="text-sm text-gray-600 mb-1" data-translate="projeto4_stack"></p>
+                <p class="text-sm" data-translate="projeto4_desc"></p>
                 <a href="https://github.com/lucasrosa14/TodoMvc" target="_blank"
-                    class="text-blue-600 font-medium hover:underline">🔗 Ver repositório</a>
+                    class="text-blue-600 font-medium hover:underline" data-translate="projeto_repositorio"></a>
             </div>
 
         </div>
@@ -180,7 +189,7 @@
 
     <!-- Contato -->
     <section id="contato" class="max-w-4xl mx-auto p-8">
-        <h2 class="text-xl font-semibold mb-4">Contato</h2>
+        <h2 class="text-xl font-semibold mb-4" data-translate="titulo_contato"></h2>
         <p>Email: <a href="mailto:contact.lucassr@gmail.com"
                 class="text-blue-600 hover:underline">contact.lucassr@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/lucas-souza-da-rosa/" target="_blank"
