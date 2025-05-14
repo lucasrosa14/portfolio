@@ -71,7 +71,10 @@ const translations = {
     ferramenta_7: "Java",
     ferramenta_8: "Behave",
     ferramenta_9: "Pytest",
-    ferramenta_10: "Allure"
+    ferramenta_10: "Allure",
+    ferramenta_11: "GitHub Actions",
+
+    copyright: "2025 Lucas Souza da Rosa. Todos os direitos reservados.",
   },
   en: {
     nav_sobre: "About",
@@ -142,7 +145,10 @@ const translations = {
     ferramenta_7: "Java",
     ferramenta_8: "Behave",
     ferramenta_9: "Pytest",
-    ferramenta_10: "Allure"
+    ferramenta_10: "Allure",
+    ferramenta_11: "GitHub Actions",
+
+    copyright: "2025 Lucas Souza da Rosa. All rights reserved.",
   }
 };
 
